@@ -4,7 +4,7 @@ Status as of 2026-11-23. Written by the Claude session that built the first vers
 
 ## 1. The most important fact
 
-**v1.0 builds, passes its tests and runs on an API 36 emulator, but has not yet run on a real phone.** Release 1.0 (versionCode 100) ships as `com.anthonyessaye.egress`. The Kotlin package and namespace stay `app.egress`. The release build is R8-minified (APK ~4.6 MB, down from 43 MB), and the minified build was re-verified on the emulator: capture, geo, map, DNS sinking and route blackholing all work. What was verified:
+**v1.0 builds, passes its tests, and runs on the user's own phone and an API 36 emulator.** Release 1.0 (versionCode 100) ships as `com.anthonyessaye.egress`. The Kotlin package and namespace stay `app.egress`. The release build is R8-minified (APK ~4.6 MB, down from 43 MB), and the minified build was re-verified on the emulator: capture, geo, map, DNS sinking and route blackholing all work. What was verified:
 
 | Part | Status | How |
 |---|---|---|
@@ -13,9 +13,9 @@ Status as of 2026-11-23. Written by the Claude session that built the first vers
 | All SQL in `data/Repository.kt` | Verified | Every query run against the real schema in SQLite with synthetic data |
 | `assets/countries.bin` | Verified | Decoded by a Python reader and rendered to SVG; shapes correct |
 | Everything else (Android and Compose) | **Builds and runs** | `assembleRelease` green (2026-11-23). Exercised on an API 36 emulator: capture, DNS still resolving, geo, map, Pulse sheets and Log filters all work |
-| Per-app attribution | **Works on emulator** | API 36 emulator showed lookups correctly credited to Google, Play services and Shell. Still unconfirmed on a real phone |
+| Per-app attribution | **Works on emulator** | API 36 emulator showed lookups correctly credited to Google, Play services and Shell. User reports it works on their own phone |
 
-**Your first job:** run the on-device test plan in §5 on a real phone.
+**Status:** the user tested v1.0 on their own phone and reported it works. The detailed on-device checks in §5 are still useful after any change to capture or attribution.
 
 ## 2. What the user wants
 
