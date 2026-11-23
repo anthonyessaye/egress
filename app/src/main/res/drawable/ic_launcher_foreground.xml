@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Egress mark: an origin node with an arc leaving it toward a destination node -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <path
+        android:pathData="M36,70 Q54,26 74,42"
+        android:strokeWidth="5"
+        android:strokeLineCap="round"
+        android:fillColor="#00000000">
+        <aapt:attr name="android:strokeColor">
+            <gradient
+                android:type="linear"
+                android:startX="36" android:startY="70"
+                android:endX="74" android:endY="42"
+                android:startColor="#FF8A5CFF"
+                android:endColor="#FF3CF0FF" />
+        </aapt:attr>
+    </path>
+    <path android:fillColor="#FF8A5CFF"
+        android:pathData="M36,70m-7,0a7,7 0,1 1,14 0a7,7 0,1 1,-14 0" />
+    <path android:fillColor="#553CF0FF"
+        android:pathData="M74,42m-11,0a11,11 0,1 1,22 0a11,11 0,1 1,-22 0" />
+    <path android:fillColor="#FF3CF0FF"
+        android:pathData="M74,42m-6,0a6,6 0,1 1,12 0a6,6 0,1 1,-12 0" />
+</vector>
